@@ -324,6 +324,10 @@ service qcamerasvr /vendor/bin/mm-qcamera-daemon
     user camera
     group camera system inet input graphics
 
+# Restart cameraserver in case it starts before qcamerasvr
+on property:init.svc.qcamerasvr=running
+    restart cameraserver
+
 on property:sys.boot_completed=1
     restart cameraserver
 

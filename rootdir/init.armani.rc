@@ -348,7 +348,7 @@ service xtwifi_inet /system/bin/xtwifi-inet-agent
 service charger /sbin/healthd -c
     class charger
     critical
-    seclabel u:r:healthd:s0
+    seclabel u:r:charger:s0
 
 on charger
     # Enable Power modes and set the CPU Freq Sampling rates

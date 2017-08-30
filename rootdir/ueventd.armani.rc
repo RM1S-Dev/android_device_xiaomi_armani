@@ -39,8 +39,8 @@
 /dev/jpeg0                0660   system     camera
 /dev/adsprpc-smd          0664   system     system
 /dev/hw_random            0660   system     system
-/dev/smd2                 0660   bluetooth  net_bt_stack
-/dev/smd3                 0660   bluetooth  net_bt_stack
+/dev/smd2                 0660   bluetooth  bluetooth
+/dev/smd3                 0660   bluetooth  bluetooth
 
 # Permissions for audio
 /dev/msm_aac              0660   system     audio

@@ -203,6 +203,7 @@ PRODUCT_PACKAGES += \
     WCNSS_qcom_wlan_nv.bin
 
 PRODUCT_PACKAGES += \
+    wificond \
     hostapd \
     wpa_supplicant \
     wpa_supplicant.conf

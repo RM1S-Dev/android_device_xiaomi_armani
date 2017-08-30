@@ -59,6 +59,7 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
+    libbt-vendor \
     bdaddr_xiaomi
 
 PRODUCT_COPY_FILES += \

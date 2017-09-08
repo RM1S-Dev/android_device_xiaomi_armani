@@ -243,14 +243,17 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.vibrator@1.0-impl
 
+# WCNSS
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini:system/vendor/etc/wifi/WCNSS_qcom_cfg.ini \
+    $(LOCAL_PATH)/wifi/WCNSS_cfg.dat:system/etc/firmware/wlan/prima/WCNSS_cfg.dat \
+    $(LOCAL_PATH)/wifi/WCNSS_qcom_wlan_nv.bin:system/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin
+
 # Wifi
 PRODUCT_PACKAGES += \
     hostapd_default.conf \
     p2p_supplicant_overlay.conf \
-    wpa_supplicant_overlay.conf \
-    WCNSS_cfg.dat \
-    WCNSS_qcom_cfg.ini \
-    WCNSS_qcom_wlan_nv.bin
+    wpa_supplicant_overlay.conf
 
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \

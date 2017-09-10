@@ -8,4 +8,6 @@ LOCAL_CFLAGS := -Wall -DANDROID_TARGET=\"$(TARGET_BOARD_PLATFORM)\"
 LOCAL_SRC_FILES := init_armani.cpp
 LOCAL_MODULE := libinit_armani
 
+LOCAL_STATIC_LIBRARIES := libbase
+
 include $(BUILD_STATIC_LIBRARY)

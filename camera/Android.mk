@@ -5,10 +5,22 @@ LOCAL_SRC_FILES := \
     CameraWrapper.cpp
 
 LOCAL_SHARED_LIBRARIES := \
-    libhardware liblog libcamera_client libutils libgui libbase
+    libhardware \
+    libbase \
+    libhidltransport \
+    liblog \
+    libcamera_client \
+    libutils \
+    libcutils \
+    libgui \
+    android.hidl.token@1.0-utils
 
 LOCAL_C_INCLUDES += \
+    framework/native/include \
     system/media/camera/include
+
+LOCAL_STATIC_LIBRARIES := \
+    libarect
 
 LOCAL_MODULE_RELATIVE_PATH := hw
 LOCAL_MODULE := camera.$(TARGET_BOARD_PLATFORM)

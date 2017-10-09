@@ -178,11 +178,6 @@ static void power_hint(__attribute__((unused)) struct power_module *module,
             }
         }
         break;
-    case POWER_HINT_SET_PROFILE:
-        pthread_mutex_lock(&lock);
-        set_power_profile(*(int32_t *)data);
-        pthread_mutex_unlock(&lock);
-        break;
     case POWER_HINT_LOW_POWER:
         /* This hint is handled by the framework */
         break;
@@ -194,15 +189,6 @@ static void power_hint(__attribute__((unused)) struct power_module *module,
 static struct hw_module_methods_t power_module_methods = {
     .open = NULL,
 };
-
-static int get_feature(__attribute__((unused)) struct power_module *module,
-                       feature_t feature)
-{
-    if (feature == POWER_FEATURE_SUPPORTED_PROFILES) {
-        return PROFILE_MAX;
-    }
-    return -1;
-}
 
 struct power_module HAL_MODULE_INFO_SYM = {
     .common = {
@@ -217,6 +203,5 @@ struct power_module HAL_MODULE_INFO_SYM = {
 
     .init = power_init,
     .setInteractive = power_set_interactive,
-    .powerHint = power_hint,
-    .getFeature = get_feature
+    .powerHint = power_hint
 };

@@ -51,7 +51,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.mdpcomp.idletime=600 \
     persist.hwc.mdpcomp.enable=true \
     persist.hwc.ptor.enable=true \
-    debug.enable.sglscale=1
+    debug.enable.sglscale=1 \
+    debug.sf.latch_unsignaled=1
 
 # GPS
 PRODUCT_PROPERTY_OVERRIDES += \

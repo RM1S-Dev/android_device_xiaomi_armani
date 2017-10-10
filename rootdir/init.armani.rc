@@ -349,7 +349,7 @@ service xtwifi_inet /system/bin/xtwifi-inet-agent
     group inet gps
     disabled
 
-service charger /sbin/healthd -c
+service charger /charger
     class charger
     critical
     seclabel u:r:charger:s0

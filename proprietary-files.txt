@@ -80,9 +80,9 @@ vendor/lib/libmmcamera_faceproc.so
 vendor/lib/libmmjpeg.so
 
 # Camera firmware
-etc/firmware/cpp_firmware_v1_1_1.fw
-etc/firmware/cpp_firmware_v1_1_6.fw
-etc/firmware/cpp_firmware_v1_2_0.fw
+etc/firmware/cpp_firmware_v1_1_1.fw:vendor/firmware/cpp_firmware_v1_1_1.fw
+etc/firmware/cpp_firmware_v1_1_6.fw:vendor/firmware/cpp_firmware_v1_1_6.fw
+etc/firmware/cpp_firmware_v1_2_0.fw:vendor/firmware/cpp_firmware_v1_2_0.fw
 
 # Chromatix
 vendor/lib/libchromatix_ov9760_q1v05a_common.so
@@ -123,10 +123,10 @@ vendor/lib/libizat_core.so
 vendor/lib/liblbs_core.so
 
 # Graphics
-etc/firmware/a300_pfp.fw
-etc/firmware/a300_pm4.fw
-etc/firmware/a330_pfp.fw
-etc/firmware/a330_pm4.fw
+etc/firmware/a300_pfp.fw:vendor/firmware/a300_pfp.fw
+etc/firmware/a300_pm4.fw:vendor/firmware/a300_pm4.fw
+etc/firmware/a330_pfp.fw:vendor/firmware/a330_pfp.fw
+etc/firmware/a330_pm4.fw:vendor/firmware/a330_pm4.fw
 vendor/lib/egl/eglsubAndroid.so
 vendor/lib/egl/libEGL_adreno.so
 vendor/lib/egl/libGLESv1_CM_adreno.so
@@ -225,25 +225,25 @@ bin/time_daemon:vendor/bin/time_daemon
 vendor/lib/libTimeService.so
 
 # Venus firmware
-etc/firmware/venus.b00
-etc/firmware/venus.b01
-etc/firmware/venus.b02
-etc/firmware/venus.b03
-etc/firmware/venus.b04
-etc/firmware/venus.mbn
-etc/firmware/venus.mdt
+etc/firmware/venus.b00:vendor/firmware/venus.b00
+etc/firmware/venus.b01:vendor/firmware/venus.b01
+etc/firmware/venus.b02:vendor/firmware/venus.b02
+etc/firmware/venus.b03:vendor/firmware/venus.b03
+etc/firmware/venus.b04:vendor/firmware/venus.b04
+etc/firmware/venus.mbn:vendor/firmware/venus.mbn
+etc/firmware/venus.mdt:vendor/firmware/venus.mdt
 
 # WideVine - from angler
 vendor/lib/mediadrm/libwvdrmengine.so|66ba66d047044f92eb0eada1faf6a5799ded90ab
 
 # Wifi
-etc/firmware/wcnss.b00
-etc/firmware/wcnss.b01
-etc/firmware/wcnss.b02
-etc/firmware/wcnss.b04
-etc/firmware/wcnss.b06
-etc/firmware/wcnss.b07
-etc/firmware/wcnss.b08
-etc/firmware/wcnss.b09
-etc/firmware/wcnss.mdt
--lib/libqminvapi.so:vendor/lib/libqminvapi.so
+etc/firmware/wcnss.b00:vendor/firmware/wcnss.b00
+etc/firmware/wcnss.b01:vendor/firmware/wcnss.b01
+etc/firmware/wcnss.b02:vendor/firmware/wcnss.b02
+etc/firmware/wcnss.b04:vendor/firmware/wcnss.b04
+etc/firmware/wcnss.b06:vendor/firmware/wcnss.b06
+etc/firmware/wcnss.b07:vendor/firmware/wcnss.b07
+etc/firmware/wcnss.b08:vendor/firmware/wcnss.b08
+etc/firmware/wcnss.b09:vendor/firmware/wcnss.b09
+etc/firmware/wcnss.mdt:vendor/firmware/wcnss.mdt
+-lib/libqminvapi.so

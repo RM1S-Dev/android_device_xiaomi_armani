@@ -35,9 +35,9 @@ bin/hci_qcomm_init:vendor/bin/hci_qcomm_init
 
 # Camera
 bin/mm-qcamera-daemon:vendor/bin/mm-qcamera-daemon
-lib/hw/camera.vendor.msm8226.so
-lib/libmmcamera_interface.so
-lib/libmmjpeg_interface.so
+lib/hw/camera.vendor.msm8226.so:vendor/lib/hw/camera.vendor.msm8226.so
+lib/libmmcamera_interface.so:vendor/lib/libmmcamera_interface.so
+lib/libmmjpeg_interface.so:vendor/lib/libmmjpeg_interface.so
 vendor/lib/libactuator_dw9714.so
 vendor/lib/libactuator_dw9714_camcorder.so
 vendor/lib/libactuator_dw9714_camera.so
@@ -64,7 +64,7 @@ vendor/lib/libmmcamera2_wnr_module.so
 vendor/lib/liboemcamera.so
 
 # Camera (moto msm8226)
-lib/libqomx_core.so
+lib/libqomx_core.so:vendor/lib/libqomx_core.so
 vendor/lib/libjpegdhw.so
 vendor/lib/libjpegehw.so
 vendor/lib/libmmcamera_hdr_gb_lib.so
@@ -116,8 +116,8 @@ etc/quipc.conf
 etc/sap.conf
 etc/xtwifi.conf
 etc/xtra_root_cert.pem
-lib/libloc_api_v02.so
-lib/libloc_ds_api.so
+lib/libloc_api_v02.so:vendor/lib/libloc_api_v02.so
+lib/libloc_ds_api.so:vendor/lib/libloc_ds_api.so
 vendor/lib/libgeofence.so
 vendor/lib/libizat_core.so
 vendor/lib/liblbs_core.so
@@ -193,7 +193,7 @@ bin/qmuxd:vendor/bin/qmuxd
 bin/radish:vendor/bin/radish
 bin/rfs_access:vendor/bin/rfs_access
 bin/rmt_storage:vendor/bin/rmt_storage
-lib/libmdmdetect.so
+lib/libmdmdetect.so:vendor/lib/libmdmdetect.so
 vendor/lib/libcneapiclient.so
 vendor/lib/libconfigdb.so
 vendor/lib/libdsi_netctrl.so
@@ -246,4 +246,4 @@ etc/firmware/wcnss.b07
 etc/firmware/wcnss.b08
 etc/firmware/wcnss.b09
 etc/firmware/wcnss.mdt
--lib/libqminvapi.so
+-lib/libqminvapi.so:vendor/lib/libqminvapi.so

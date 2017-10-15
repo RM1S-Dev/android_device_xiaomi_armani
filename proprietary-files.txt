@@ -1,5 +1,5 @@
 # ADSP
-bin/adsprpcd
+bin/adsprpcd:vendor/bin/adsprpcd
 vendor/lib/libadsprpc.so
 vendor/lib/libfastcvadsp_stub.so
 vendor/lib/libfastcvopt.so
@@ -31,10 +31,10 @@ vendor/lib/soundfx/libqcreverb.so
 vendor/lib/soundfx/libqcvirt.so
 
 # Bluetooth
-bin/hci_qcomm_init
+bin/hci_qcomm_init:vendor/bin/hci_qcomm_init
 
 # Camera
-bin/mm-qcamera-daemon
+bin/mm-qcamera-daemon:vendor/bin/mm-qcamera-daemon
 lib/hw/camera.vendor.msm8226.so
 lib/libmmcamera_interface.so
 lib/libmmjpeg_interface.so
@@ -100,7 +100,7 @@ vendor/lib/libchromatix_s5k3h2yx_owt8a01a_video_hd.so
 vendor/lib/libchromatix_s5k3h2yx_owt8a01a_zsl.so
 
 # DRM
-bin/qseecomd
+bin/qseecomd:vendor/bin/qseecomd
 vendor/lib/libdrmdecrypt.so
 vendor/lib/libdrmfs.so
 vendor/lib/libdrmtime.so
@@ -111,9 +111,9 @@ vendor/lib/libssd.so
 # GPS
 -app/com.qualcomm.location/com.qualcomm.location.apk
 -app/com.qualcomm.services.location/com.qualcomm.services.location.apk
-bin/location-mq
-bin/xtwifi-client
-bin/xtwifi-inet-agent
+bin/location-mq:vendor/bin/location-mq
+bin/xtwifi-client:vendor/bin/xtwifi-client
+bin/xtwifi-inet-agent:vendor/bin/xtwifi-inet-agent
 etc/permissions/com.qualcomm.location.xml
 etc/gps.conf
 etc/izat.conf
@@ -178,11 +178,11 @@ vendor/lib/libmmosal.so
 vendor/lib/libSHIMDivxDrm.so
 
 # Perf
-bin/mpdecision
+bin/mpdecision:vendor/bin/mpdecision
 vendor/lib/libqti-perfd-client.so
 
 # Qualcomm
-bin/irsc_util
+bin/irsc_util:vendor/bin/irsc_util
 vendor/lib/libdiag.so
 vendor/lib/libdsutils.so
 vendor/lib/libidl.so
@@ -199,11 +199,11 @@ vendor/lib/libqmiservices.so
 vendor/lib/libsmemlog.so
 
 # Radio
-bin/netmgrd
-bin/qmuxd
-bin/radish
-bin/rfs_access
-bin/rmt_storage
+bin/netmgrd:vendor/bin/netmgrd
+bin/qmuxd:vendor/bin/qmuxd
+bin/radish:vendor/bin/radish
+bin/rfs_access:vendor/bin/rfs_access
+bin/rmt_storage:vendor/bin/rmt_storage
 lib/libmdmdetect.so
 vendor/lib/libcneapiclient.so
 vendor/lib/libconfigdb.so
@@ -216,7 +216,7 @@ vendor/lib/libsystem_health_mon.so
 vendor/lib/libxml.so
 
 # Sensors
-bin/sensors.qcom
+bin/sensors.qcom:vendor/bin/sensors.qcom
 vendor/lib/hw/sensors.msm8226.so
 vendor/lib/libAKM8963.so
 vendor/lib/libsensor1.so
@@ -225,13 +225,13 @@ vendor/lib/libsensor_test.so
 vendor/lib/libsensor_user_cal.so
 
 # Thermal
-bin/thermal-engine
+bin/thermal-engine:vendor/bin/thermal-engine
 vendor/lib/libthermalclient.so
 vendor/lib/libthermalioctl.so
 
 # Time services
 -app/TimeService/TimeService.apk
-bin/time_daemon
+bin/time_daemon:vendor/bin/time_daemon
 -vendor/lib/libtime_genoff.so
 vendor/lib/libTimeService.so
 

@@ -92,9 +92,6 @@ MAX_EGL_CACHE_SIZE := 2048*1024
 # Hardware tunables
 BOARD_HARDWARE_CLASS := $(LOCAL_PATH)/lineagehw/
 
-# Headers
-TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
-
 # Init
 TARGET_INIT_VENDOR_LIB := libinit_armani
 TARGET_RECOVERY_DEVICE_MODULES := libinit_armani

@@ -13,14 +13,19 @@ LOCAL_SHARED_LIBRARIES := \
     libutils \
     libcutils \
     libgui \
-    android.hidl.token@1.0-utils
+    libdl \
+    android.hidl.token@1.0-utils \
+    android.hardware.graphics.bufferqueue@1.0
 
 LOCAL_C_INCLUDES += \
     framework/native/include \
     system/media/camera/include
 
 LOCAL_STATIC_LIBRARIES := \
-    libarect
+    libarect \
+    libbase
+
+LOCAL_HEADER_LIBRARIES := libnativebase_headers
 
 LOCAL_MODULE_RELATIVE_PATH := hw
 LOCAL_PROPRIETARY_MODULE := true

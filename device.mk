@@ -184,10 +184,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_ENFORCE_RRO_TARGETS := \
     framework-res
 
-# Power
-PRODUCT_PACKAGES += \
-    power.msm8226
-
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.extension_library=/vendor/lib/libqti-perfd-client.so
 

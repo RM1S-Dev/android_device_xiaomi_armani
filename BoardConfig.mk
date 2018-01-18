@@ -71,6 +71,9 @@ endif
 TARGET_HW_DISK_ENCRYPTION := true
 TARGET_LEGACY_HW_DISK_ENCRYPTION := true
 
+# Exclude serif fonts for saving system.img size.
+EXCLUDE_SERIF_FONTS := true
+
 # Extended filesystem support
 TARGET_EXFAT_DRIVER := sdfat
 

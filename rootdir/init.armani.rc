@@ -218,7 +218,7 @@ service rfs_access /vendor/bin/rfs_access
     user system
     group system net_raw
 
-service bdaddr /system/bin/bdaddr_xiaomi
+service bdaddr /vendor/bin/bdaddr_xiaomi
     class core
     user root
     group system

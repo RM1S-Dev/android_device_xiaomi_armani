@@ -46,8 +46,8 @@ on fs
     wait /dev/block/platform/${ro.boot.bootdevice}
     symlink /dev/block/platform/${ro.boot.bootdevice} /dev/block/bootdevice
 
-    mount_all fstab.armani
-    swapon_all fstab.armani
+    mount_all /vendor/etc/fstab.armani
+    swapon_all /vendor/etc/fstab.armani
 
     restorecon_recursive /persist
 

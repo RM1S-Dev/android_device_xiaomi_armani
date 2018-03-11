@@ -307,7 +307,7 @@ service ril-daemon2 /vendor/bin/hw/rild -c 2
     capabilities BLOCK_SUSPEND NET_ADMIN NET_RAW
 
 on property:persist.radio.multisim.config=dsds
-    start ril-daemon2
+    enable ril-daemon2
 
 on property:ro.boot.modem=HM1AW
     setprop ro.telephony.default_network 0

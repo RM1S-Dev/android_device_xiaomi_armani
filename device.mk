@@ -43,7 +43,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Audio
 PRODUCT_PACKAGES += \
-    audiod \
     audio.a2dp.default \
     audio.primary.msm8226 \
     audio.r_submix.default \

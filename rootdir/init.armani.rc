@@ -222,7 +222,7 @@ on post-fs-data
     chown system system /sys/class/timed_output/vibrator/amp
     chmod 0664 /sys/class/timed_output/vibrator/amp
 
-service irsc_util /vendor/bin/irsc_util "/etc/sec_config"
+service irsc_util /vendor/bin/irsc_util "/vendor/etc/sec_config"
     class main
     user root
     oneshot

@@ -209,7 +209,7 @@ PRODUCT_PACKAGES += \
 
 # Storage
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.sys.sdcardfs=false
+    ro.sys.sdcardfs=true
 
 # Thermal
 PRODUCT_COPY_FILES += \

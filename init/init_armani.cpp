@@ -65,13 +65,13 @@ void vendor_load_properties()
     std::string modem = GetProperty("ro.boot.modem", "");
 
     if (modem == "HM1AW") {
-        property_override("ro.product.model", "HM 1SW");
+        property_override_dual("ro.product.model", "ro.vendor.product.model", "HM 1SW");
     } else if (modem == "HM1AC") {
-        property_override("ro.product.model", "HM 1SC");
+        property_override_dual("ro.product.model", "ro.vendor.product.model", "HM 1SC");
     }
 
-    property_override("ro.product.device", "armani");
-    property_override("ro.build.product", "armani");
+    property_override_dual("ro.product.device", "ro.vendor.product.device", "armani");
+    property_override_dual("ro.build.product", "ro.vendor.build.product", "armani");
     property_override("ro.build.description", "armani-user 4.4.4 KTU84P V8.0.1.0.KHCMIDG release-keys");
-    property_override("ro.build.fingerprint", "Xiaomi/armani/armani:4.4.4/KTU84P/V8.0.1.0.KHCMIDG:user/release-keys");
+    property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "Xiaomi/armani/armani:4.4.4/KTU84P/V8.0.1.0.KHCMIDG:user/release-keys");
 }

@@ -21,6 +21,8 @@
 #include <cutils/properties.h>
 #include <string.h>
 
+#undef PROPERTY_VALUE_MAX
+
 #define BTM_DEF_LOCAL_NAME   "Xiaomi HM 1S"
 
 #define BLUETOOTH_QTI_SW TRUE

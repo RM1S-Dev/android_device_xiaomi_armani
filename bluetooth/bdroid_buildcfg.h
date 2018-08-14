@@ -26,5 +26,6 @@
 #define MAX_ACL_CONNECTIONS   7
 #define MAX_L2CAP_CHANNELS    16
 #define BT_CLEAN_TURN_ON_DISABLED TRUE
+#define BLE_VND_INCLUDED FALSE
 #pragma pop_macro("PROPERTY_VALUE_MAX")
 #endif

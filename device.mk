@@ -245,11 +245,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensor_def_qcomdev.conf:system/etc/sensor_def_qcomdev.conf
 
 PRODUCT_PACKAGES += \
-    sensors.msm8226
-
-PRODUCT_PACKAGES += \
-    android.hardware.sensors@1.0-impl \
-    android.hardware.sensors@1.0-service
+    android.hardware.sensors@1.0-impl.armani \
+    android.hardware.sensors@1.0-service.armani
 
 # Thermal
 PRODUCT_COPY_FILES += \

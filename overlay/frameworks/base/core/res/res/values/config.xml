@@ -315,8 +315,8 @@
         <item>"/system/framework/arm/boot.vdex"</item>
         <item>"/system/framework/arm/boot-core-libart.oat"</item>
         <item>"/system/framework/arm/boot-core-libart.vdex"</item>
-        <item>"/system/system_ext/priv-app/SystemUIGoogle/oat/arm/SystemUIGoogle.vdex"</item>
-        <item>"/system/system_ext/priv-app/SystemUIGoogle/oat/arm/SystemUIGoogle.odex"</item>
+        <item>"/system/system_ext/priv-app/SystemUI/oat/arm/SystemUI.vdex"</item>
+        <item>"/system/system_ext/priv-app/SystemUI/oat/arm/SystemUI.odex"</item>
         <item>"/system/lib/libsurfaceflinger.so"</item>
     </string-array>
 

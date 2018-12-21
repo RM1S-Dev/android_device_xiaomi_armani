@@ -362,7 +362,7 @@ service location_mq /vendor/bin/location-mq
 service charger /charger
     class charger
     critical
-    seclabel u:r:charger:s0
+    seclabel u:r:healthd:s0
 
 on charger
     # Enable Power modes and set the CPU Freq Sampling rates

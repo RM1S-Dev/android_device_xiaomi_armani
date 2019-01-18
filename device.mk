@@ -130,7 +130,7 @@ PRODUCT_PACKAGES += \
 
 # Display calibration
 PRODUCT_PACKAGES += \
-    vendor.mokee.livedisplay@1.0-service-legacymm
+    vendor.mokee.livedisplay@2.0-service-legacymm
 
 # DRM
 PRODUCT_PROPERTY_OVERRIDES += \

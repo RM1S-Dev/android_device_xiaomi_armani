@@ -128,11 +128,6 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service
 
-# Display calibration
-PRODUCT_PACKAGES += \
-    vendor.mokee.livedisplay@2.0-service-legacymm \
-    vendor.mokee.livedisplay@2.0-service-sysfs
-
 # DRM
 PRODUCT_PROPERTY_OVERRIDES += \
     drm.service.enabled=true

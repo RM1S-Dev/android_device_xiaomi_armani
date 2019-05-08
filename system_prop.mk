@@ -77,7 +77,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     drm.service.enabled=1 \
     vidc.enc.narrow.searchrange=1 \
     ro.config.media_vol_steps=25 \
-    ro.config.vc_call_vol_steps=7
+    ro.config.vc_call_vol_steps=7 \
+    media.stagefright.thumbnail.prefer_hw_codecs=true
 
 # Memory optimizations
 PRODUCT_PROPERTY_OVERRIDES += \

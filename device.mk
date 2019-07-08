@@ -153,6 +153,10 @@ PRODUCT_PACKAGES += \
     FMRadio \
     libfmjni
 
+# Gatekeeper
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0-service.software
+
 # GPS
 PRODUCT_PACKAGES += \
     gps.msm8226

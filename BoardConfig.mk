@@ -177,6 +177,9 @@ TARGET_LD_SHIM_LIBS := /system/vendor/lib/hw/camera.vendor.msm8226.so|libshim_ca
 # Snapdragon LLVM
 TARGET_USE_SDCLANG := true
 
+# Time services
+BOARD_USES_QC_TIME_SERVICES := true
+
 # Wifi
 BOARD_HAS_QCOM_WLAN := true
 BOARD_WLAN_DEVICE := qcwcn

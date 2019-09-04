@@ -327,20 +327,21 @@ PRODUCT_PACKAGES += \
     wpa_supplicant_overlay.conf
 
 PRODUCT_PACKAGES += \
-    wifilogd \
+    android.hardware.wifi@1.0-service \
     hostapd \
+    dhcpcd.conf \
+    libwcnss_qmi \
+    libwifi-hal \
+    libwpa_client \
+    wcnss_service \
+    wificond \
     wpa_supplicant \
     wpa_supplicant.conf
 
-PRODUCT_PACKAGES += \
-    libcurl \
-    libqsap_sdk \
-    libQWiFiSoftApCfg \
-    libwcnss_qmi \
-    wcnss_service
-
-PRODUCT_PACKAGES += \
-    android.hardware.wifi@1.0-service
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/prima/WCNSS_qcom_cfg.ini \
+    $(LOCAL_PATH)/wifi/WCNSS_cfg.dat:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/prima/WCNSS_cfg.dat \
+    $(LOCAL_PATH)/wifi/WCNSS_qcom_wlan_nv.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin
 
 PRODUCT_PROPERTY_OVERRIDES += \
     wifi.interface=wlan0 \

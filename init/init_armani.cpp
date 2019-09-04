@@ -74,6 +74,4 @@ void vendor_load_properties()
 
     property_override_dual("ro.product.device", "ro.vendor.product.device", "armani");
     property_override_dual("ro.build.product", "ro.vendor.build.product", "armani");
-    property_override("ro.build.description", "armani-user 4.4.4 KTU84P V8.0.1.0.KHCMIDG release-keys");
-    property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "Xiaomi/armani/armani:4.4.4/KTU84P/V8.0.1.0.KHCMIDG:user/release-keys");
 }

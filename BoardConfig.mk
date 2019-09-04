@@ -55,7 +55,7 @@ TARGET_NO_RADIOIMAGE := true
 # Charger
 BOARD_CHARGER_ENABLE_SUSPEND := true
 BOARD_CHARGER_DISABLE_INIT_BLANK := true
-WITH_LINEAGE_CHARGER := false
+WITH_MOKEE_CHARGER := false
 
 # Dexpreopt
 ifeq ($(HOST_OS),linux)

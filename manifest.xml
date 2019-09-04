@@ -202,11 +202,11 @@
         </interface>
     </hal>
     <hal format="hidl">
-        <name>vendor.lineage.power</name>
+        <name>vendor.mokee.power</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
         <interface>
-            <name>ILineagePower</name>
+            <name>IMoKeePower</name>
             <instance>default</instance>
         </interface>
     </hal>

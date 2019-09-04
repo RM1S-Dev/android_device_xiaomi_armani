@@ -18,7 +18,7 @@
 
 set -e
 
-DEVICE=dior
+DEVICE=armani
 VENDOR=xiaomi
 
 INITIAL_COPYRIGHT_YEAR=2019

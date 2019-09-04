@@ -18,7 +18,7 @@
 
 set -e
 
-DEVICE=dior
+DEVICE=armani
 VENDOR=xiaomi
 
 # Load extract_utils and do some sanity checks

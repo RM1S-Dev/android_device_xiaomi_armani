@@ -18,6 +18,10 @@
 # Sensors
 /persist/misc/sensors(/.*)?                   u:object_r:sensors_persist_file:s0
 
+# sysfs - net
+/sys/devices/msm_sdcc\.[0-9]/mmc_host/.*/net(/.*)? u:object_r:sysfs_net:s0
+/sys/devices/virtual/net(/.*)?                     u:object_r:sysfs_net:s0
+
 # Files in rootfs
 /tombstones(/.*)?              u:object_r:tmp_root_mount_file:s0
 

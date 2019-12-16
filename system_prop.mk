@@ -79,6 +79,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.qti.sys.fw.bservice_enable=true
 
+# OMX
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.media.treble_omx=false
+
 # Perf
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.max_starting_bg=8 \

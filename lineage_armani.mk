@@ -21,6 +21,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/armani/device.mk)
 $(call inherit-product-if-exists, vendor/xiaomi/armani/armani-vendor.mk)
 
+# Shipping API level
+$(call inherit-product, vendor/lineage/build/target/product/product_launched_with_j_mr2.mk)
+
 # Inherit some common LineageOS stuff
 $(call inherit-product, vendor/lineage/config/common_mini_phone.mk)
 

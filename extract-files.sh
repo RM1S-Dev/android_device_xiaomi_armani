@@ -37,6 +37,14 @@ fi
 # default to not sanitizing the vendor folder before extraction
 clean_vendor=false
 
+function blob_fixup() {
+    case "${1}" in
+    vendor/lib/mediadrm/libwvdrmengine.so)
+        patchelf --replace-needed "libprotobuf-cpp-lite.so" "libprotobuf-cpp-lite-v28.so" "${2}"
+    ;;
+    esac
+}
+
 while [ "$1" != "" ]; do
     case $1 in
         -p | --path )           shift

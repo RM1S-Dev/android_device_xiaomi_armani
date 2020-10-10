@@ -112,7 +112,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.ril.config=simactivation
 
 # Traced
-persist.traced.enable=0
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.traced.enable=0
 
 # Wi-Fi
 PRODUCT_PROPERTY_OVERRIDES += \

@@ -111,6 +111,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.call_ring.multiple=false \
     ro.telephony.ril.config=simactivation
 
+# Traced
+persist.traced.enable=0
+
 # Wi-Fi
 PRODUCT_PROPERTY_OVERRIDES += \
     wifi.interface=wlan0 \

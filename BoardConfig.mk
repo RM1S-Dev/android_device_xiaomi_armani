@@ -153,6 +153,9 @@ TARGET_PROVIDES_LIBLIGHT := true
 # Media
 TARGET_USES_MEDIA_EXTENSIONS := true
 
+# memfd
+TARGET_HAS_MEMFD_BACKPORT := true
+
 # No old RPC for prop
 TARGET_NO_RPC := true
 

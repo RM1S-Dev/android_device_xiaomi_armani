@@ -174,6 +174,9 @@ TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 BOARD_NO_SECURE_DISCARD := true
 
+# Releasetools
+TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)/releasetools
+
 BOARD_ROOT_EXTRA_FOLDERS := \
     /firmware \
     /persist \

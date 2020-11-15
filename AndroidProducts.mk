@@ -1,2 +1,2 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/mk_armani.mk
+    $(LOCAL_DIR)/lineage_armani.mk

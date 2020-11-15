@@ -121,7 +121,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.bionic.ld.warning=0
-
-# Maintainer
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.mk.maintainer=subdragonzj

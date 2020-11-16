@@ -174,12 +174,9 @@ TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 BOARD_NO_SECURE_DISCARD := true
 
-# Root
-BOARD_ROOT_EXTRA_SYMLINKS := \
-    /mnt/vendor/persist:/persist
-
 BOARD_ROOT_EXTRA_FOLDERS := \
     /firmware \
+    /persist \
     /tombstones
 
 # SELinux

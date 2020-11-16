@@ -175,6 +175,10 @@ TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 BOARD_NO_SECURE_DISCARD := true
 
+BOARD_ROOT_EXTRA_FOLDERS := \
+    /firmware \
+    /tombstone
+
 # SELinux
 include device/qcom/sepolicy-legacy/sepolicy.mk
 #BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy

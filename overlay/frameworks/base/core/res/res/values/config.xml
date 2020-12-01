@@ -35,6 +35,13 @@
          scaled proportionally to the smaller buckets.  -1 keeps the default. -->
     <integer name="config_lowMemoryKillerMinFreeKbytesAbsolute">81920</integer>
 
+    <!-- Device configuration indicating whether we should avoid using accelerated graphics
+         in certain places to reduce RAM footprint.  This is ignored if ro.config.low_ram
+         is true (in that case this is assumed true as well).  It can allow you to tune down
+         your device's memory use without going to the point of causing applications to turn
+         off features. -->
+    <bool name="config_avoidGfxAccel">true</bool>
+
     <!-- This string array should be overridden by the device to present a list of network
          attributes.  This is used by the connectivity manager to decide which networks can coexist
          based on the hardware -->

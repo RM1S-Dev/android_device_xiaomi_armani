@@ -162,8 +162,8 @@ PRODUCT_PACKAGES += \
     gps.msm8226
 
 PRODUCT_PACKAGES += \
-    android.hardware.gnss@1.0-impl.legacy \
-    android.hardware.gnss@1.0-service.legacy
+    android.hardware.gnss@1.0-impl.armani \
+    android.hardware.gnss@1.0-service.armani
 
 # Health
 PRODUCT_PACKAGES += \

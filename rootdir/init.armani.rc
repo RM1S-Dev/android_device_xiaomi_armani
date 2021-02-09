@@ -320,7 +320,7 @@ on property:ro.boot.modem=HM1AC
     setprop ro.telephony.default_network 7
 
 service qcamerasvr /vendor/bin/mm-qcamera-daemon
-    class late_start
+    class main
     user camera
     group camera system inet input graphics
 

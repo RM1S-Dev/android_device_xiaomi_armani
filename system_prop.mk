@@ -31,7 +31,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     camera.disable_treble=true
 
 # Charger
-ro.charger.enable_suspend=true
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.charger.enable_suspend=true
 
 # Dalvik heap
 PRODUCT_PROPERTY_OVERRIDES += \

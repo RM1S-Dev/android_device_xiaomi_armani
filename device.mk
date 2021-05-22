@@ -28,6 +28,9 @@ TARGET_SCREEN_WIDTH := 720
 # System properties
 -include $(LOCAL_PATH)/system_prop.mk
 
+# Tweaks for 'low ram' devices
+$(call inherit-product-if-exists, $(LOCAL_PATH)/lowram/device.mk)
+
 # ANT+
 PRODUCT_PACKAGES += \
     AntHalService \

@@ -217,5 +217,8 @@ TARGET_USES_QCOM_WCNSS_QMI := true
 TARGET_DISABLE_WCNSS_CONFIG_COPY := true
 WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 
+# Tweaks for 'low ram' devices
+-include device/xiaomi/armani/lowram/BoardConfig.mk
+
 # inherit from the proprietary version
 -include vendor/xiaomi/armani/BoardConfigVendor.mk

@@ -1,0 +1,1 @@
+allow network_stack sysfs:file { getattr open read };

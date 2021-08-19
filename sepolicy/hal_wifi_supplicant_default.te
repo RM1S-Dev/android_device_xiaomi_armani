@@ -1,0 +1,1 @@
+allow hal_wifi_supplicant_default debugfs:file rw_file_perms;

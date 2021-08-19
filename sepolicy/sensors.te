@@ -1,3 +1,4 @@
 set_prop(sensors, sensors_prop)
 
 allow sensors persist_misc_file:dir { getattr search };
+allow sensors sysfs:file { rw_file_perms append open };

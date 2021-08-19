@@ -1,0 +1,4 @@
+allow init proc:file setattr;
+allow init sysfs:file { open setattr write };
+allow init sysfs_leds:lnk_file read;
+allow init system_file:file execute_no_trans;

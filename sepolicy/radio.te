@@ -1,0 +1,4 @@
+allow radio sysfs:file { getattr open read };
+
+# Allow binder communication with gpuservice
+binder_call(radio, gpuservice)

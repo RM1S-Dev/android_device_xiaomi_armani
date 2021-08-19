@@ -1,6 +1,6 @@
 # Bluetooth
-/system/bin/bdaddr_xiaomi                     u:object_r:bdaddr_exec:s0
-/system/bin/init\.armani\.bt\.sh              u:object_r:bluetooth_loader_exec:s0
+/(vendor|system/vendor)/bin/bdaddr_xiaomi                                    u:object_r:bdaddr_exec:s0
+/(vendor|system/vendor)/bin/init\.armani\.bt\.sh              u:object_r:bluetooth_loader_exec:s0
 
 # Camera
 /data/cam_socket([0-9])+                      u:object_r:camera_socket:s0
@@ -18,8 +18,14 @@
 # Sensors
 /persist/misc/sensors(/.*)?                   u:object_r:sensors_persist_file:s0
 
-# Thermal
-/system/bin/thermal-engine                    u:object_r:thermal-engine_exec:s0
+# Files in rootfs
+/tombstones(/.*)?              u:object_r:tmp_root_mount_file:s0
 
 # Vendor
+/(vendor|system/vendor)/bin/hw/android\.hardware\.gatekeeper@1\.0-service\.software           u:object_r:hal_gatekeeper_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.gnss@[0-9]\.[0-9]-service\..*   u:object_r:hal_gnss_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.power\.stats@1\.0-service\.mock    u:object_r:hal_power_stats_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.sensors@1\.0-service\.armani      u:object_r:hal_sensors_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.lineage\.touch@1\.0-service\.armani               u:object_r:hal_lineage_touch_default_exec:s0
+
+/sys/kernel/debug/tracing/trace_marker(/.*)?             u:object_r:debugfs_trace_marker:s0

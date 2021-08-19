@@ -1,0 +1,20 @@
+allow zygote debugfs:file { getattr open write };
+allow zygote bluetooth_prop:file rw_file_perms;
+allow zygote sysfs:dir rw_dir_perms;
+allow zygote sysfs:file rw_file_perms;
+
+# allow zygote to nuke cgroups during boot
+allow zygote cgroup:file create_file_perms;
+
+allow webview_zygote zygote_exec:file { rw_file_perms };
+allow webview_zygote zygote:unix_dgram_socket write;
+allow webview_zygote app_data_file:dir r_dir_perms;
+allow webview_zygote app_data_file:file r_file_perms;
+
+allow webview_zygote debugfs:file { getattr open write };
+allow webview_zygote debugfs:dir { getattr rw_dir_perms };
+allow webview_zygote debugfs_tracing:dir search;
+allow webview_zygote debugfs_tracing_debug:dir search;
+allow webview_zygote debugfs_trace_marker:file rw_file_perms;
+
+get_prop(zygote, exported_camera_prop);

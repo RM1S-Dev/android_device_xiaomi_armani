@@ -1,0 +1,1 @@
+allow secure_element sysfs:file { getattr open read };

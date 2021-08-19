@@ -1,0 +1,1 @@
+allow shell sysfs:file rw_file_perms;

@@ -1,0 +1,1 @@
+allow gatekeeperd debugfs:file rwx_file_perms;

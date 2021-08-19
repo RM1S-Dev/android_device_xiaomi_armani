@@ -1,0 +1,2 @@
+allow hal_power_stats_default debugfs:file write;
+allow hal_power_stats_default sysfs:dir rw_dir_perms;

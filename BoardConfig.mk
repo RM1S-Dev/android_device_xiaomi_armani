@@ -57,7 +57,6 @@ TARGET_NO_RADIOIMAGE := true
 
 # Charger
 BOARD_CHARGER_DISABLE_INIT_BLANK := true
-WITH_MOKEE_CHARGER := false
 
 # Dex
 ifeq ($(HOST_OS),linux)

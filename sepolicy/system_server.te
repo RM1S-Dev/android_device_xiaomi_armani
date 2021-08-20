@@ -3,6 +3,7 @@ allow system_server mediaserver:unix_stream_socket write;
 allow system_server vibeamp_sysfs:file rw_file_perms;
 allow system_server persist_file:file read;
 allow system_server hal_light_default:process signal;
+allow system_server debugfs: file rw_file_perms;
 
 get_prop(system_server, exported_camera_prop);
 get_prop(system_server, userspace_reboot_config_prop);

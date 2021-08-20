@@ -1,2 +1,11 @@
 # Allow /data/misc/bluetooth access
 allow bluetooth_loader bluetooth_data_file:dir search;
+allow bluetooth_loader bluetooth_data_file:file rwx_file_perms;
+allow bluetooth_loader shell_exec:file { entrypoint getattr read };
+
+# Set persist.service.bdroid.* and bluetooth.* property values
+set_prop(bluetooth_loader, bluetooth_prop)
+
+allow bluetooth_loader sysfs_bluetooth_writable:file r_file_perms;
+allow bluetooth_loader system_file:file execute_no_trans;
+allow bluetooth_loader toolbox_exec:file rwx_file_perms;

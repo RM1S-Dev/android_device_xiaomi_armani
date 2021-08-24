@@ -362,10 +362,13 @@ service location_mq /vendor/bin/location-mq
     group gps
     disabled
 
-service charger /charger
+service charger /system/bin/charger
     class charger
     critical
-    seclabel u:r:healthd:s0
+    user system
+    group system graphics input
+    capabilities SYS_BOOT
+    seclabel u:r:charger:s0
 
 on charger
     restorecon -R /sys/devices/system/cpu

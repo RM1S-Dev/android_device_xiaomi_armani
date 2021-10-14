@@ -54,6 +54,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.hwui.use_buffer_age=false \
     debug.composition.type=c2d \
     debug.mdpcomp.idletime=600 \
+    debug.renderengine.backend=threaded \
     persist.hwc.mdpcomp.enable=true \
     persist.hwc.ptor.enable=true \
     debug.enable.sglscale=1 \

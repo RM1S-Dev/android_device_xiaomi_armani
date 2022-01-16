@@ -112,8 +112,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Telephony
 PRODUCT_PROPERTY_OVERRIDES += \
-    rild.libpath=/vendor/lib/libril-qc-qmi-1.so \
-    rild.libargs=-d[SPACE]/dev/smd0 \
+    vendor.rild.libpath=/vendor/lib/libril-qc-qmi-1.so \
+    vendir.rild.libargs=-d[SPACE]/dev/smd0 \
     ril.subscription.types=NV,RUIM \
     persist.data.netmgrd.qos.enable=true \
     persist.data.qmi.adb_logmask=0 \

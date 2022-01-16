@@ -121,22 +121,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.call_ring.multiple=false \
     ro.telephony.ril.config=simactivation
 
-# Traced
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.traced.enable=0
-
 # Wi-Fi
 PRODUCT_PROPERTY_OVERRIDES += \
     wifi.interface=wlan0 \
     ro.disableWifiApFirmwareReload=true
-
-# ADB
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.secure=0 \
-    ro.adb.secure=0 \
-    persist.service.adb.enable=1 \
-    persist.service.debuggable=1 \
-    persist.sys.usb.config=adb
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.bionic.ld.warning=0

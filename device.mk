@@ -311,7 +311,7 @@ PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service.basic
 
 # USB ID
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+PRODUCT_PROPERTY_OVERRIDES += \
     ro.usb.vid=2717 \
     ro.usb.id.midi=90BA \
     ro.usb.id.midi_adb=90BB \

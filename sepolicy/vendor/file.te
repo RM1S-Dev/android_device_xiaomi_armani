@@ -1,3 +1,4 @@
 # CMHW
 type vibeamp_sysfs, fs_type, sysfs_type;
 type tmp_root_mount_file, file_type;
+type sysfs_disk_stat, fs_type, sysfs_type;

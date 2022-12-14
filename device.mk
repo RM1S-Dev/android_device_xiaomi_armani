@@ -53,7 +53,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libaudio-resampler \
-    libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
     tinymix
@@ -96,7 +95,7 @@ PRODUCT_PACKAGES += \
     libshim_camera \
     libshim_dso_handle \
     libxml2 \
-    Snap
+    Aperture
 
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl-legacy \
@@ -107,7 +106,6 @@ PRODUCT_COPY_FILES += \
 
 # Configstore
 PRODUCT_PACKAGES += \
-    android.hardware.configstore@1.1-impl \
     android.hardware.configstore@1.1-service
 
 # Connectivity
@@ -137,12 +135,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
     android.hardware.drm@1.0-service
-
-# Ebtables
-PRODUCT_PACKAGES += \
-    ebtables \
-    ethertypes \
-    libebtc
 
 # Filesystem tools
 PRODUCT_PACKAGES += \
@@ -174,9 +166,7 @@ PRODUCT_PACKAGES += \
 # HIDL
 PRODUCT_PACKAGES += \
     libhidltransport \
-    libhidltransport.vendor \
     libhwbinder \
-    libhwbinder.vendor \
     vndservicemanager
 
 
@@ -341,7 +331,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
     hostapd \
-    dhcpcd.conf \
     libwcnss_qmi \
     libwifi-hal \
     libwpa_client \

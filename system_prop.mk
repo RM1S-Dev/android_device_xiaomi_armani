@@ -18,6 +18,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.qcom.bluetooth.soc=pronto \
+    bluetooth.core.le.vendor_capabilities.enabled=false \
     qcom.bt.dev_power_class=1 \
     ro.bluetooth.dun=true \
     ro.bluetooth.sap=true \

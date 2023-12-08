@@ -34,6 +34,7 @@
 #include <gps_extended.h>
 #include <MsgTask.h>
 #include <log_util.h>
+#include <stdio.h>
 
 namespace loc_core {
 

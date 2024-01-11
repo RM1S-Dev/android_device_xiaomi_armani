@@ -191,7 +191,7 @@ SELINUX_IGNORE_NEVERALLOWS := true
 
 # Shims
 TARGET_LD_SHIM_LIBS := \
-    /system/vendor/lib/hw/camera.vendor.msm8226.so|libshim_camera.so \
+    /system/lib/hw/camera.vendor.msm8226.so|libshim_camera.so \
     /system/vendor/lib/libFaceProc.so|libshim_dso_handle.so \
     /system/vendor/lib/libril-qc-qmi-1.so|libaudioclient_shim.so
 
